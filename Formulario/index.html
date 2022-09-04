@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario</title>
-</head>
-<body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Formulario</title>
+   </head>
+   <body>
+      <div>
+         <h1>Formulario de Registro</h1>
 
-  <div>
-  <h1>Formulario de Registro</h1>
+         <label for="nombre">Nombre:</label>
+         <input type="text" id="nombre" required />
+         <br /><br />
+         <label for="apellido">Apellido:</label>
+         <input type="text" id="apellido" required />
+         <br /><br />
 
-<label for="nombre">Nombre:</label>
-<input type="text" id="nombre" required>
-<br><br>
-<label for="apellido">Apellido:</label>
-<input type="text" id="apellido" required>
-<br><br>
+         <span> Modalidad de la cursada: </span>
 
-<span> Modalidad de la cursada: </span>
+         <label for="od">On-Demand</label>
+         <input type="radio" id="od" name="modalidad" />
+         <label for="live">En vivo</label>
+         <input type="radio" name="modalidad" id="od" />
 
-<label for="od">On-Demand</label>
-<input type="radio" id="od" name="modalidad">
-<label for="live">En vivo</label>
-<input type="radio" name="modalidad" id="od">
+         <br /><br />
 
-<br><br>
+         <label for="mail">Correo:</label>
+         <input type="email" id="mail" required />
 
-<label for="mail">Correo:</label>
-<input type="email" id="mail" required>
+         <br /><br />
 
-<br><br>
+         <input type="checkbox" id="notificacion" />
+         <label for="notificacion"
+            >Deseo recibir información sobre nuevos posteos en la plataforma de
+            Nucba</label
+         >
 
-<input type="checkbox" id="notificacion">
-<label for="notificacion">Deseo recibir información sobre nuevos posteos en la plataforma de Nucba</label>
+         <br /><br />
 
-<br><br>
+         <input type="checkbox" id="terminos" />
+         <label for="terminos"
+            >Declaro que lei los terminos y condiciones y estoy listo para
+            convertirme en desarrollador web Full Stack</label
+         >
 
-<input type="checkbox" id="terminos">
-<label for="terminos">Declaro que lei los terminos y condiciones y estoy listo para convertirme en desarrollador web Full Stack</label>
+         <br /><br />
 
-<br><br>
-
-<input type="submit" value="Enviar">
-</div>
-</body>
+         <input type="submit" value="Enviar" />
+      </div>
+   </body>
 </html>
